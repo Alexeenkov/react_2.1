@@ -1,0 +1,26 @@
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+@media (max-width: 768px) {
+    .filter {
+        max-width: 500px;
+    }
+}
+
+.filter__item {
+    padding: 10px 20px;
+    border: 1px solid #000;
+    margin: 5px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.filter__item.active {
+    background-color: rgb(44, 44, 44);
+    color: #fff;
+}
